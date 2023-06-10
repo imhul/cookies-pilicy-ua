@@ -1,214 +1,407 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
-    <meta name="msapplication-tap-highlight" content="no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta http-equiv="cleartype" content="on" />
-    <meta name="description"
-        content="WebLogic Studio - Website development and creation, as well as SEO optimization and website promotion in Kiev" />
-    <meta name="author" content="Tkachuk Zakhar" />
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="MobileOptimized" content="320" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#416475" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <style>
-        :root {
-            --color-primary: #416475;
-            --color-secondary: #fdd835;
-            --transparent: rgb(0 0 0 / 0%);
-            --color-deep-black: #2a414c;
-            --color-black: #395766;
-            --color-white: #bcc8ce;
-            --color-bg: #456778;
-            --color-content-bg: rgb(65 100 117 / 40%);
-            --color-content-bg-hover: rgb(65 100 117 / 80%);
-            --color-timeline-icon-bg: rgb(207 216 220 / 40%);
-            --color-footer: rgb(0 0 0 / 65%);
-            --color-danger: #ff6f00;
-            --blue-grey-lighten-5: #eceff1;
-            --blue-grey-lighten-4: #cfd8dc;
-            --blue-grey-lighten-3: #b0bec5;
-            --blue-grey-lighten-2: #90a4ae;
-            --blue-grey-lighten-1: #78909c;
-            --blue-grey: #607d8b;
-            --blue-grey-darken-1: #546e7a;
-            --blue-grey-darken-2: #455a64;
-            --blue-grey-darken-3: #37474f;
-            --blue-grey-darken-4: #263238;
-        }
-
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            outline: 0;
-            border: 0;
-            text-size-adjust: auto;
-            -webkit-tap-highlight-color: var(--transparent);
-            cursor: crosshair !important;
-            overflow-x: hidden;
-            background-color: var(--color-bg);
-            color: var(--color-white);
-            font-family: sans-serif;
-            font-size: 1rem;
-            line-height: 1.5;
-        }
-
-        * {
-            margin: 0;
-            outline: none !important;
-            box-sizing: border-box;
-        }
-
-        *::before,
-        *::after {
-            box-sizing: border-box;
-        }
-
-        *:focus,
-        *:active {
-            outline: none;
-        }
-
-        *::-webkit-scrollbar {
-            width: 0.375rem;
-        }
-
-        *::-webkit-scrollbar-track {
-            background-color: var(--color-primary);
-        }
-
-        *::-webkit-scrollbar-thumb {
-            border: 0.125rem solid var(--color-secondary);
-            border-radius: 0;
-            background-color: var(--color-secondary);
-        }
-
-        img,
-        svg,
-        path,
-        button {
-            user-select: none;
-        }
-
-        a,
-        svg,
-        path,
-        input,
-        button,
-        .url,
-        .btn,
-        .link,
-        .button,
-        .ant-btn,
-        .anticon,
-        .basic-transition {
-            transition-delay: 0s;
-            transition-duration: 0.35s;
-            transition-timing-function: ease-in-out;
-            transition-property: color, background-color, border-color, fill,
-                filter, stroke, text-shadow, box-shadow;
-        }
-
-        a,
-        a:focus,
-        a:visited,
-        a:active {
-            color: var(--color-secondary);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--color-white);
-            text-decoration: none;
-        }
-
-        .content {
-            padding: 2rem 0;
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-
-        @media screen and (min-width: 768px) {
-            .content {
-                width: 80%;
-                max-width: 60rem;
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+        />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="default"
+        />
+        <meta http-equiv="cleartype" content="on" />
+        <meta
+            name="description"
+            content="WebLogic Studio - Website development and creation, as well as SEO optimization and website promotion in Kiev"
+        />
+        <meta name="author" content="Tkachuk Zakhar" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="theme-color" content="#416475" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <style>
+            :root {
+                --color-primary: #416475;
+                --color-secondary: #fdd835;
+                --transparent: rgb(0 0 0 / 0%);
+                --color-deep-black: #2a414c;
+                --color-black: #395766;
+                --color-white: #bcc8ce;
+                --color-bg: #456778;
+                --color-content-bg: rgb(65 100 117 / 40%);
+                --color-content-bg-hover: rgb(65 100 117 / 80%);
+                --color-timeline-icon-bg: rgb(207 216 220 / 40%);
+                --color-footer: rgb(0 0 0 / 65%);
+                --color-danger: #ff6f00;
+                --blue-grey-lighten-5: #eceff1;
+                --blue-grey-lighten-4: #cfd8dc;
+                --blue-grey-lighten-3: #b0bec5;
+                --blue-grey-lighten-2: #90a4ae;
+                --blue-grey-lighten-1: #78909c;
+                --blue-grey: #607d8b;
+                --blue-grey-darken-1: #546e7a;
+                --blue-grey-darken-2: #455a64;
+                --blue-grey-darken-3: #37474f;
+                --blue-grey-darken-4: #263238;
             }
-        }
 
-        h1 {
-            margin: 1rem 0;
-        }
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                outline: 0;
+                border: 0;
+                text-size-adjust: auto;
+                -webkit-tap-highlight-color: var(--transparent);
+                cursor: crosshair !important;
+                overflow-x: hidden;
+                background-color: var(--color-bg);
+                color: var(--color-white);
+                font-family: sans-serif;
+                font-size: 1rem;
+                line-height: 1.5;
+            }
 
-        h2 {
-            margin: 0.5rem 0;
-        }
-    </style>
-</head>
+            * {
+                margin: 0;
+                outline: none !important;
+                box-sizing: border-box;
+            }
 
-<body>
-    <div class="content">
+            *::before,
+            *::after {
+                box-sizing: border-box;
+            }
 
+            *:focus,
+            *:active {
+                outline: none;
+            }
 
-        <h1>Політика використання файлів cookies</h1>
-<p>Останнє оновлення: 10 червня 2023 року</p>
-<p>Ця Політика використання файлів cookies пояснює, що таке файли cookies і як ми їх використовуємо. Ви повинні прочитати цю політику, щоб розуміти, які типи файлів cookies ми використовуємо, яку інформацію ми збираємо за допомогою файлів cookies і як використовується ця інформація. Ця Політика використання файлів cookies була створена за допомогою генератора <a href="https://www.privacypolicies.com/cookies-policy-generator/" target="_blank">Політик використання файлів cookies</a>.</p>
-<p>Зазвичай файли cookies не містять жодної інформації, яка особисто ідентифікує користувача, але особиста інформація, яку ми зберігаємо про вас, може бути пов'язана з інформацією, збереженою у файлі cookies та отриманою з нього. Для додаткової інформації про те, як ми використовуємо, зберігаємо та забезпечуємо безпеку вашої особистої інформації, див. нашу Політику конфіденційності.</p>
-<p>Ми не зберігаємо чутливу особисту інформацію, таку як поштові адреси, паролі в облікових записах тощо, у використовуваних нами файлах cookies.</p>
-<h1>Тлумачення та визначення</h1>
-<h2>Тлумачення</h2>
-<p>Слова, з яких починаються ініціали, мають значення, визначене в наведених нижче умовах. Наведені визначення мають той самий зміст незалежно від того, чи вживаються вони у формі однини чи множини.</p>
-<h2>Визначення</h2>
-<p>У цілях цієї Полі
+            *::-webkit-scrollbar {
+                width: 0.375rem;
+            }
 
-тики використання файлів cookies:</p>
-<ul>
-    <li><strong>Компанія</strong> (у цій Політиці використання файлів cookies також називається "Компанія", "Ми", "Нас" або "Наша") відноситься до Weblogic Studio.</li>
-    <li><strong>Файли cookies</strong> - це невеликі файли, які розміщуються на вашому комп'ютері, мобільному пристрої або іншому пристрої веб-сайтом і містять деталі вашої історії перегляду на цьому веб-сайті серед інших їх використань.</li>
-    <li><strong>Веб-сайт</strong> відноситься до Weblogic Studio, доступного за адресою <a href="https://weblogic-ukraine.pp.ua/" rel="external nofollow noopener" target="_blank">https://weblogic-ukraine.pp.ua/</a></li>
-    <li><strong>Ви</strong> - це фізична особа, яка отримує доступ до веб-сайту, використовує його, або компанія, або будь-яке юридичне утворення, від імені якого така фізична особа отримує доступ до веб-сайту або використовує його, застосовується відповідно.</li>
-</ul>
-<h1>Використання файлів cookies</h1>
-<h2>Типи файлів cookies, які ми використовуємо</h2>
-<p>Файли cookies можуть бути "постійними" або "сеансовими". Постійні файли cookies залишаються на вашому персональному комп'ютері або мобільному пристрої, коли ви переходите в офлайн-режим, тоді як сеансові файли cookies видаляються, як тільки ви закриваєте свій веб-переглядач.</p>
-<p>Ми використовуємо як сеансові, так і постійні файли cookies для наступних цілей:</p>
-<ul>
-    <li>
-        <p><strong>Необхідні / основні файли cookies</strong></p>
-        <p>Тип: сеансові файли cookies</p>
-        <p>Управляються: Нами</p>
-       
+            *::-webkit-scrollbar-track {
+                background-color: var(--color-primary);
+            }
 
- <p>Мета: Ці файли cookies необхідні для надання вам послуг, доступних через веб-сайт, і для можливості використання деяких його функцій. Вони допомагають аутентифікувати користувачів та запобігати шахрайському використанню облікових записів користувачів. Без цих файлів cookies неможливо надати послуги, які ви запитали, і ми використовуємо ці файли cookies лише для надання вам цих послуг.</p>
-    </li>
-    <li>
-        <p><strong>Файли cookies функціональності</strong></p>
-        <p>Тип: постійні файли cookies</p>
-        <p>Управляються: Нами</p>
-        <p>Мета: Ці файли cookies дозволяють нам запам'ятовувати ваші вибори, коли ви використовуєте веб-сайт, наприклад, запам'ятовувати ваші дані для входу або вибрану мову. Мета цих файлів cookies - забезпечити вам більш персоналізований досвід і уникнути необхідності вводити ваші уподобання кожного разу, коли ви використовуєте веб-сайт.</p>
-    </li>
-</ul>
-<h2>Ваші вибори щодо файлів cookies</h2>
-<p>Якщо ви бажаєте уникнути використання файлів cookies на веб-сайті, спочатку вам потрібно вимкнути використання файлів cookies у вашому веб-переглядачі, а потім видалити файли cookies, збережені в вашому веб-переглядачі, пов'язані з цим веб-сайтом. Ви можете скористатися цією опцією в будь-який час, щоб уникнути використання файлів cookies.</p>
-<p>Якщо ви не приймаєте наші файли cookies, у вас можуть виникнути деякі незручності при використанні веб-сайту, і деякі функції можуть не працювати належним чином.</p>
-<p>Якщо ви хочете видалити файли cookies або налаштувати ваш веб-переглядач таким чином, щоб він не приймав файли cookies, будь ласка, відвідайте сторінку довідки вашого веб-переглядача для отримання докладнішої інформації.</p>
-<h2>Зміни до політики використання файлів cookies</h2>
-<p>Ми можемо час від часу оновлювати нашу Політику використання файлів cookies для відображення змін у наших практиках або за іншими оперативними, юридичними або регуляторними причинами. Будь ласка, переглядайте цю Політику використання файлів cookies регулярно для отримання оновленої інформації про наші практики використання файлів cookies.</p>
-<h2>Зв'яжіться з нами</h2>
-<p>Якщо у вас є питання, зауваження або запити щодо цієї Політики використання файлів cookies, зв'яжіться з нами за адресою:</p>
-<p>Email: [адреса електронної пошти]</p>
-<p>Ця Політика використання файлів cookies була створена за допомогою генератора <a href="https://www.privacypolicies.com/cookies-policy-generator/" target="_blank">Політик використання файлів cookies</a>.</p>
-    </div>
+            *::-webkit-scrollbar-thumb {
+                border: 0.125rem solid var(--color-secondary);
+                border-radius: 0;
+                background-color: var(--color-secondary);
+            }
 
-</body>
+            img,
+            svg,
+            path,
+            button {
+                user-select: none;
+            }
 
+            a,
+            svg,
+            path,
+            input,
+            button,
+            .url,
+            .btn,
+            .link,
+            .button,
+            .ant-btn,
+            .anticon,
+            .basic-transition {
+                transition-delay: 0s;
+                transition-duration: 0.35s;
+                transition-timing-function: ease-in-out;
+                transition-property: color, background-color,
+                    border-color, fill, filter, stroke, text-shadow,
+                    box-shadow;
+            }
+
+            a,
+            a:focus,
+            a:visited,
+            a:active {
+                color: var(--color-secondary);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--color-white);
+                text-decoration: none;
+            }
+
+            .content {
+                padding: 2rem 0;
+                width: 90%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+            }
+
+            @media screen and (min-width: 768px) {
+                .content {
+                    width: 80%;
+                    max-width: 60rem;
+                }
+            }
+
+            h1 {
+                margin: 1rem 0;
+            }
+
+            h2 {
+                margin: 0.5rem 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="content">
+            <h1>Політика використання файлів Cookies</h1>
+            <p>Останнє оновлення: 10 червня 2023 року</p>
+            <p>
+                Ця Політика використання файлів Cookies пояснює, що
+                таке файли Cookies і як ми їх використовуємо. Ви
+                повинні прочитати цю політику, щоб розуміти, які типи
+                файлів Cookies ми використовуємо, яку інформацію ми
+                збираємо за допомогою файлів Cookies і як
+                використовується ця інформація.
+            </p>
+            <p>
+                Зазвичай файли Cookies не містять жодної інформації,
+                яка особисто ідентифікує користувача, але особиста
+                інформація, яку ми зберігаємо про вас, може бути
+                пов'язана з інформацією, збереженою у файлі Cookies та
+                отриманою з нього. Для додаткової інформації про те,
+                як ми використовуємо, зберігаємо та забезпечуємо
+                безпеку вашої особистої інформації, див. нашу Політику
+                конфіденційності.
+            </p>
+            <p>
+                Ми не зберігаємо чутливу особисту інформацію, таку як
+                поштові адреси, паролі в облікових записах тощо, у
+                використовуваних нами файлах Cookies.
+            </p>
+            <h1>Тлумачення та визначення</h1>
+            <h2>Тлумачення</h2>
+            <p>
+                Слова, з яких починаються ініціали, мають значення,
+                визначене в наведених нижче умовах. Наведені
+                визначення мають той самий зміст незалежно від того,
+                чи вживаються вони у формі однини чи множини.
+            </p>
+            <h2>Визначення</h2>
+            <p>У цілях цієї Полі тики використання файлів Cookies:</p>
+            <ul>
+                <li>
+                    <strong>Компанія</strong> (у цій Політиці
+                    використання файлів Cookies також називається
+                    &quot;Компанія&quot;, &quot;Ми&quot;, "Нас&quot;
+                    або &quot;Наша&quot;) відноситься до Weblogic
+                    Studio.
+                </li>
+                <li>
+                    <strong>Файли Cookies</strong> - це невеликі
+                    файли, які розміщуються на вашому комп'ютері,
+                    мобільному пристрої або іншому пристрої веб-сайтом
+                    і містять деталі вашої історії перегляду на цьому
+                    веб-сайті серед інших їх використань.
+                </li>
+                <li>
+                    <strong>Веб-сайт</strong> відноситься до Weblogic
+                    Studio, доступного за адресою
+                    <a
+                        href="https://weblogic-ukraine.pp.ua/"
+                        rel="external nofollow noopener"
+                        target="_blank"
+                        >https://weblogic-ukraine.pp.ua/</a
+                    >
+                </li>
+                <li>
+                    <strong>Ви</strong> - це фізична особа, яка
+                    отримує доступ до веб-сайту, використовує його,
+                    або компанія, або будь-яке юридичне утворення, від
+                    імені якого така фізична особа отримує доступ до
+                    веб-сайту або використовує його, застосовується
+                    відповідно.
+                </li>
+            </ul>
+            <h1>Використання файлів Cookies</h1>
+            <h2>Типи файлів Cookies, які ми використовуємо</h2>
+            <p>
+                Файли Cookies можуть бути &quot;постійними&quot; або
+                &quot;сеансовими&quot;. Постійні файли Cookies
+                залишаються на вашому персональному комп'ютері або
+                мобільному пристрої, коли ви переходите в
+                офлайн-режим, тоді як сеансові файли Cookies
+                видаляються, як тільки ви закриваєте свій
+                веб-переглядач.
+            </p>
+            <p>
+                Ми використовуємо як сеансові, так і постійні файли
+                Cookies для наступних цілей:
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        <strong
+                            >Необхідні / основні файли Cookies</strong
+                        >
+                    </p>
+                    <p>Тип: сеансові файли Cookies</p>
+                    <p>Управляються: Нами</p>
+
+                    <p>
+                        Мета: Ці файли Cookies необхідні для надання
+                        вам послуг, доступних через веб-сайт, і для
+                        можливості використання деяких його функцій.
+                        Вони допомагають аутентифікувати користувачів
+                        та запобігати шахрайському використанню
+                        облікових записів користувачів. Без цих файлів
+                        Cookies неможливо надати послуги, які ви
+                        запитали, і ми використовуємо ці файли Cookies
+                        лише для надання вам цих послуг.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <strong
+                            >Файли Cookies функціональності</strong
+                        >
+                    </p>
+                    <p>Тип: постійні файли Cookies</p>
+                    <p>Управляються: Нами</p>
+                    <p>
+                        Мета: Ці файли Cookies дозволяють нам
+                        запам'ятовувати ваші вибори, коли ви
+                        використовуєте веб-сайт, наприклад,
+                        запам'ятовувати ваші дані для входу або
+                        вибрану мову. Мета цих файлів Cookies -
+                        забезпечити вам більш персоналізований досвід
+                        і уникнути необхідності вводити ваші
+                        уподобання кожного разу, коли ви
+                        використовуєте веб-сайт.
+                    </p>
+                </li>
+            </ul>
+            <h2>Ваші вибори щодо файлів Cookies</h2>
+            <p>
+                Якщо ви бажаєте уникнути використання файлів Cookies
+                на веб-сайті, спочатку вам потрібно вимкнути
+                використання файлів Cookies у вашому веб-переглядачі,
+                а потім видалити файли Cookies, збережені в вашому
+                веб-переглядачі, пов'язані з цим веб-сайтом. Ви можете
+                скористатися цією опцією в будь-який час, щоб уникнути
+                використання файлів Cookies.
+            </p>
+            <p>
+                Якщо ви не приймаєте наші файли Cookies, у вас можуть
+                виникнути деякі незручності при використанні
+                веб-сайту, і деякі функції можуть не працювати
+                належним чином.
+            </p>
+            <p>
+                Якщо ви хочете видалити файли Cookies або налаштувати
+                ваш веб-переглядач таким чином, щоб він не приймав
+                файли Cookies, будь ласка, відвідайте сторінку довідки
+                вашого веб-переглядача для отримання докладнішої
+                інформації.
+            </p>
+            <ul>
+                <li>
+                    <p>
+                        Для веб-переглядача Chrome, будь ласка,
+                        відвідайте цю сторінку від Google:
+                        <a
+                            href="https://support.google.com/accounts/answer/32050"
+                            rel="external nofollow noopener"
+                            target="_blank"
+                            >https://support.google.com/accounts/answer/32050</a
+                        >
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Для веб-переглядача Internet Explorer, будь
+                        ласка, відвідайте цю сторінку від Microsoft:
+                        <a
+                            href="http://support.microsoft.com/kb/278835"
+                            rel="external nofollow noopener"
+                            target="_blank"
+                            >http://support.microsoft.com/kb/278835</a
+                        >
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Для веб-переглядача Firefox, будь ласка,
+                        відвідайте цю сторінку від Mozilla:
+                        <a
+                            href="https://support.mozilla.org/uk/kb/ochystka-cookies-zabezpechennya-vashoyi-konfidencialnosti"
+                            rel="external nofollow noopener"
+                            target="_blank"
+                            >https://support.mozilla.org/uk/kb/ochystka-cookies-zabezpechennya-vashoyi-konfidencialnosti</a
+                        >
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Для веб-переглядача Safari, будь ласка,
+                        відвідайте цю сторінку від Apple:
+                        <a
+                            href="https://support.apple.com/uk-ua/guide/safari/sfri11471/mac"
+                            rel="external nofollow noopener"
+                            target="_blank"
+                            >https://support.apple.com/uk-ua/guide/safari/sfri11471/mac</a
+                        >
+                    </p>
+                </li>
+            </ul>
+            <p>
+                Для будь-якого іншого веб-переглядача, будь ласка,
+                відвідайте офіційні сторінки веб-переглядача.
+            </p>
+            <h2>Зміни до політики використання файлів Cookies</h2>
+            <p>
+                Ми можемо час від часу оновлювати нашу Політику
+                використання файлів Cookies для відображення змін у
+                наших практиках або за іншими оперативними, юридичними
+                або регуляторними причинами. Будь ласка, переглядайте
+                цю Політику використання файлів Cookies регулярно для
+                отримання оновленої інформації про наші практики
+                використання файлів Cookies.
+            </p>
+            <h2>Зв'яжіться з нами</h2>
+            <p>
+                Якщо у вас є питання, зауваження або запити щодо цієї
+                Політики використання файлів Cookies, зв'яжіться з
+                нами:
+            </p>
+            <ul>
+                <li>
+                    <p>Напряму через email: blashirk@gmail.com</p>
+                </li>
+                <li>
+                    <p>
+                        Або відвідайте нашу сторінку і зв'яжіться з
+                        нами за допомогою контактної форми, через
+                        telegram або електронну пошту:
+                        <a
+                            href="https://weblogic.netlify.app/"
+                            rel="external nofollow noopener"
+                            target="_blank"
+                            >https://weblogic.netlify.app/</a
+                        >
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>
